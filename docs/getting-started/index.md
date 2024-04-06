@@ -95,10 +95,16 @@ title: "🚀 Getting Started"
   docker compose up -d --build
   ```
 
-- **For GPU Support:** Use an additional Docker Compose file:
+- **For NVIDIA GPU Support:** Use an additional Docker Compose file:
 
   ```bash
   docker compose -f docker-compose.yaml -f docker-compose.gpu.yaml up -d --build
+  ```
+
+- **For AMD GPU Support:** Use the additional amdgpu Docker Compose file:
+
+  ```bash
+  docker compose -f docker-compose.yaml -f docker-compose.amdgpu.yaml up -d --build
   ```
 
 - **To Expose Ollama API:** Use another Docker Compose file:
